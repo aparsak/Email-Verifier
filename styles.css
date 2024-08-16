@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the form */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Form Label */
+label {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #004d40;
+}
+
+/* Form responsiveness */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 30px 40px;
+    }
+
+    input[type="email"], input[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

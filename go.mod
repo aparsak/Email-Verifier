@@ -1,3 +1,3 @@
-module main.go
+module ev
 
 go 1.23.0

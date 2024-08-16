@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verifier</title>
+    <link rel="icon" type="image/x-icon" href="/static/logo.png">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Email Verifier</h1>
+    <form action="/Email-check" method="GET">
+        <input type="text" id="email" name="email" value="" placeholder="Enter your email" required><br>
+        <input type="submit" value="Check">
+    </form>
+
+    {{if .ShowResult}}
+        <div class="result-container">
+            <h2>Verification Result:</h2>
+            <p>{{.ValidFormat}}</p>
+            <p>{{.MXRecord}}</p>
+            <p>{{.EmailExists}}</p>
+        </div>
+    {{end}}
+</div>
+
+</body>
+</html>
